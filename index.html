@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mijn Woonplaats</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+    <style>
+        /* Zorg dat de body en html 100% hoogte hebben */
+        html, body {
+            height: 100%;
+            margin: 0;
+            font-family: 'Roboto', sans-serif;
+            display: flex;
+            flex-direction: column;
+        }
+
+        /* De container moet flexibel zijn en de resterende ruimte opvullen */
+        .container {
+            flex: 1;
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        header {
+            background-image: url('https://assets.plaece.nl/thumb/QAvt5i_2i9MD9XNmPzkXLUdgEsxKrBCvw72y5x3VJuQ/resizing_type:fit/width:425/height:0/gravity:sm/enlarge:0/aHR0cHM6Ly9hc3NldHMucGxhZWNlLm5sL29kcC1mcmllc2xhbmQvaW1hZ2UvaW1nLTU3NzFfMjc4MDI1MTQ2Mi5qcGc.jpg');
+            background-size: cover;
+            color: rgb(0, 0, 0);
+            text-align: center;
+            padding: 50px 0;
+        }
+        .left-column {
+            flex: 2;
+            padding: 20px;
+        }
+        .right-column {
+            flex: 9;
+            background-color: #f0f0f0;
+            padding: 20px;
+        }
+        .right-column div {
+            margin-bottom: 20px;
+        }
+        article {
+            display: flex;
+            align-items: center;
+        }
+        article img {
+            margin-left: 20px;
+            width: 100px;
+            height: auto;
+        }
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #333;
+            color: white;
+        }
+        @media (max-width: 768px) {
+            .left-column, .right-column {
+                flex: 100%;
+            }
+            article {
+                flex-direction: column;
+                text-align: center;
+            }
+            article img {
+                margin-left: 0;
+                margin-top: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h2>Mijn Woonplaats</h2>
+        <h1>Dearsum</h1>
+    </header>
+    <div class="container">
+        <div class="left-column">
+            <h2>Feitjes over mijn woonplaats</h2>
+            <ul>
+                <li>Het dorp is ontstaan op een terp waarvan de oorsprong teruggaat naar voor de christelijke jaartelling</li>
+                <li>De kerk van het dorp, de Nicolaaskerk is een kerk uit het begin can de 13e eeuw</li>
+                <li>ids Postma komt uit deersum</li>
+                <li>op de begraafplaats van de kerk ligt op het Erehof Deersum een boordschutter van de Halifax W7714 van de Royal Air Force</li>
+                <li>Het dorpshuis van Deersum heet De Finne</li>
+            </ul>
+        </div>
+        <div class="right-column">
+            <div>
+                <article>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean condimentum libero feugiat suscipit suscipit. 
+                        Etiam in tristique metus. Nam rutrum ex sagittis rhoncus porttitor. Mauris tortor lacus, condimentum vestibulum 
+                        sapien quis, iaculis gravida ligula. Donec luctus aliquam neque in molestie. Fusce ac congue nunc. Ut et ligula ut 
+                        lorem dictum auctor convallis in nibh. Praesent vitae dui augue. Curabitur venenatis, augue eget mollis rhoncus, ex 
+                        lectus imperdiet libero, eu tristique nisi orci ut velit. Vivamus non augue dui. Curabitur a porta enim.</p>
+                    <img src="E:\School\Nieuwe les\afbeelding\Dearsum.JPG" alt="Toeristische Attractie 1"style="width: 300px; height: 250px;">
+                </article>
+            </div>
+            <div>
+                <article>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean condimentum libero feugiat suscipit suscipit. Etiam in tristique metus. 
+                        Nam rutrum ex sagittis rhoncus porttitor. Mauris tortor lacus, condimentum vestibulum sapien quis, iaculis gravida ligula. Donec luctus aliquam 
+                        neque in molestie. Fusce ac congue nunc. Ut et ligula ut lorem dictum auctor convallis in nibh. 
+                        Praesent vitae dui augue. Curabitur venenatis, augue eget mollis rhoncus, ex lectus imperdiet libero, eu tristique nisi orci ut velit. Vivamus non augue dui. Curabitur a porta enim.</p>
+                    <img src="E:\School\Nieuwe les\afbeelding\002448_01.jpg" alt="Toeristische Attractie 2"style="width: 300px; height: 250px;">
+                </article>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2024 Mijn Woonplaats. Alle rechten voorbehouden.</p>
+    </footer>
+</body>
+</html>
